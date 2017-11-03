@@ -1,0 +1,45 @@
+package stack;
+
+public class intArrayStack implements intStack 
+{
+
+	private int[] data;
+	private int top; //Idx des nächsten freien Platzes im Array
+	
+	public intArrayStack()
+	{
+		data = new int[10];
+		top  = 0;	
+	}
+	
+	public boolean isEmpty() 
+	{
+		return top==0;
+	}
+
+	public int top() 
+	{
+		if(isEmpty())
+			throw new RuntimeException("in top: Keller leer!");
+			
+		return data[top-1];
+	}
+
+	public void push(int inhalt)
+	{
+		if(top == data.length)
+			throw new RuntimeException("in push: Keller voll!");
+		
+		data[top] = inhalt;
+		top++;
+	}
+
+	public int pop() 
+	{
+		if(isEmpty())
+			throw new RuntimeException("in pop: Keller leer!");
+		
+		top--;
+		return data[top];
+	}
+}

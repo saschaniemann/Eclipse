@@ -1,0 +1,35 @@
+package stack;
+
+public class charArrayStack implements charStack {
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public char top() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void push(char inhalt) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public char pop() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

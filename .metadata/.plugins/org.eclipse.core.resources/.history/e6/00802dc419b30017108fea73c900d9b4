@@ -1,0 +1,36 @@
+package stack;
+
+public class intArrayStack implements intStack 
+{
+
+	private int[] data;
+	private int top; //Idx des nächsten freien Platzes im Array
+	
+	public intArrayStack()
+	{
+		data = new int[10];
+		top  = 0;	
+	}
+	
+	public boolean isEmpty() 
+	{
+		return top==0;
+	}
+
+	public int top() 
+	{
+		return data[top-1];
+	}
+
+	public void push(int inhalt)
+	{
+		data[top] = inhalt;
+		top++;
+	}
+
+	public int pop() 
+	{
+		top--;
+		return data[top];
+	}
+}

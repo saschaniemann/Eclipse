@@ -1,0 +1,15 @@
+package stack;
+
+public class intTest {
+
+	public static void main(String[] args) 
+	{
+		intStack s = new intArrayStack();
+		
+		s.push(4);
+		s.push(7);
+		s.push(8);
+		s.push(9);
+	}
+
+}
